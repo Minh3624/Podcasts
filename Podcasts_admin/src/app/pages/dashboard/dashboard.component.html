@@ -1,0 +1,32 @@
+<nb-card class="row mx-0">
+  <nb-card-body class="row mx-0 ">
+    <h6>Biểu đồ thống kê</h6>
+    <div style="display: block;">
+      <canvas baseChart
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [options]="lineChartOptions"
+        [legend]="lineChartLegend"
+        [chartType]="lineChartType"
+        [colors]="chartColor">
+      </canvas>
+    </div>
+    
+    <div style="display: block;">
+      <canvas class="mt-5" baseChart
+              [data]="chartData"
+              [labels]="chartLabels"
+              [chartType]="'doughnut'"
+              [colors]="chartColors"
+              [options]="chartOptions"
+              [legend]="true">
+      </canvas>
+    </div>
+
+    
+  
+    
+    
+    
+  </nb-card-body>
+</nb-card>
